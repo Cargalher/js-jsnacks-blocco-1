@@ -82,12 +82,13 @@ for (var i=1; i<=6; i++) {
         console.log("It is not an Odd number");
     }
 }
-
 */
+
+/*
 // snack 6
 // Stampa il cubo dei primi N numeri,
 // dove N è un numero indicato dall’utente.
-/*
+
 var n =parseInt(prompt("Enter Number:"));
 console.log("n");
 var cube;
@@ -99,16 +100,48 @@ var cube=n*n*n;
 for ( var i=0; i<=n; i++);
 
 console.log("n");
-document.getElementById("msg").innerHTML= "Cube of " + ("n ") + "= "+ cube;
+document.getElementById("msg").innerHTML= "Cube of " + n + " = "+ cube;
+
 */
 
 
 // snack 8 
+// Chiedi un numbero di 4 cifre all'utente e calcola la somma di tutte le cifre
+// che compongono il numero.
 
-// Chiedi un numero di 4 cifre all’utente
+//asking a 4 digit number to the user;
+var number = prompt("Insert a 4 digits number");
+//var number = 2345;
 
-var number = prompt ("write below a 4 digit number");
-console.log(number);
-for (var i=1000; i<= 9999;i++);
+//checking if the value inserted is a number or not and if it is 4 digit long;
+if(isNaN(number)){
+    console.log(number + " You did not insert number");
+    document.write(number + " You did not insert number");
+ } 
+ else if(number>9999) {
+    console.log(number + " The inserted number has got more than four digits");
+    document.write(number + " The inserted number has got more than four digits");
+ } 
+ else if(number<1000) {
+    console.log(number + " The inserted number has got less than four digits");
+    document.write(number + " The inserted number has got less than four digits");
+ } 
+ else{
+    console.log(number + " ");
+    document.write(number + " ");
+    
 
-// e calcola la somma di tutte le cifre che compongono il numero. (edited) 
+    //from a 4 digits number to an array that stores each digit as a value in it;
+    var numbersArray = Array.from(String(number), Number);
+    console.log(numbersArray);
+    
+    //declaring a variable to sum the numbers in the array;
+    var sum = 0;
+    //using a for loop to traverse the array and sum up each number in it into the variable sum;  
+    for (var i=0; i<numbersArray.length; i++) {
+      sum = sum + numbersArray[i]; 
+    }
+    //printing the sum of the numbers;
+    console.log(sum);
+    document.write("The sum of the digits of the number you entered is " + sum);
+ }
