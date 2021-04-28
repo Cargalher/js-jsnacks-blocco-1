@@ -90,7 +90,11 @@ for (var i=1; i<=6; i++) {
 
 var n=parseInt(prompt("Enter Number:"));
 var cube;
- 
+ console.log("Enter Number:");
 var cube=n*n*n;
+console.log("n*n*n");
 document.getElementById("msg").innerHTML= "Cube of a Number = "+ cube;
 
+for ( var i=0; i<=n; i++);
+document.getElementById("msg").innerHTML= "Cube of a Number = "+ cube;
+console.log("Cube of a Number = "+ cube);
