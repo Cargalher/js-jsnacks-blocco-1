@@ -66,7 +66,7 @@
 
 
 
-
+/*
 // snack5
 // Crea un array vuoto.Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array
 var numbersOk = [];
@@ -82,3 +82,15 @@ for (var i=1; i<=6; i++) {
         console.log("It is not an Odd number");
     }
 }
+
+*/
+// snack 6
+// Stampa il cubo dei primi N numeri,
+// dove N è un numero indicato dall’utente.
+
+var n=parseInt(prompt("Enter Number:"));
+var cube;
+ 
+var cube=n*n*n;
+document.getElementById("msg").innerHTML= "Cube of a Number = "+ cube;
+
