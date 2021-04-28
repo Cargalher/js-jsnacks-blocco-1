@@ -87,7 +87,7 @@ for (var i=1; i<=6; i++) {
 // snack 6
 // Stampa il cubo dei primi N numeri,
 // dove N è un numero indicato dall’utente.
-
+/*
 var n =parseInt(prompt("Enter Number:"));
 console.log("n");
 var cube;
@@ -100,3 +100,15 @@ for ( var i=0; i<=n; i++);
 
 console.log("n");
 document.getElementById("msg").innerHTML= "Cube of " + ("n ") + "= "+ cube;
+*/
+
+
+// snack 8 
+
+// Chiedi un numero di 4 cifre all’utente
+
+var number = prompt ("write below a 4 digit number");
+console.log(number);
+for (var i=1000; i<= 9999;i++);
+
+// e calcola la somma di tutte le cifre che compongono il numero. (edited) 
