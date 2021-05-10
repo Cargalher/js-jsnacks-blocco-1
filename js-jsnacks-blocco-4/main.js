@@ -37,11 +37,14 @@ Creare un oggetto che rappresenti un triangolo rettangolo, con le seguenti propr
 Calcolare perimetro e area.
 (ripassiamo il Teorema di Pitagora ;D ) */
 
+// pitagoras theorem  side3 = 
 var triangle ={
-    base: 10,
-    height:4
+    side1: 10,
+    side2:4,
+    side3: 6
 }
-function perimeter() {
-    var c = (a * a + b * b);
- }
- console.log(perimeter);
+
+var s = (side1 + side2 + side3)/2;
+var area =  Math.sqrt(s*((s-side1)*(s-side2)*(s-side3)));
+console.log(s);
+console.log(area);
