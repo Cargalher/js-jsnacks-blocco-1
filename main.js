@@ -145,3 +145,12 @@ if(isNaN(number)){
     console.log(sum);
     document.write("The sum of the digits of the number you entered is " + sum);
  }
+ 
+
+
+//  snack 7
+
+/*var counter = 0;
+while(Math.pow(2,counter ) < 1000){
+    console.log(Math.pow(2,counter ));
+} */
