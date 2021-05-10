@@ -42,3 +42,6 @@ var triangle ={
     height:4
 }
 function perimeter() {
+    var c = (a * a + b * b);
+ }
+ console.log(perimeter);
