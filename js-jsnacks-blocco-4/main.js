@@ -37,7 +37,7 @@ Creare un oggetto che rappresenti un triangolo rettangolo, con le seguenti propr
 Calcolare perimetro e area.
 (ripassiamo il Teorema di Pitagora ;D ) */
 
-// pitagoras theorem  side3 = 
+// pitagoras theorem  side3 = a2 + b2 = c2
 var triangle ={
     side1: 10,
     side2:4,
